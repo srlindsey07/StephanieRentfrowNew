@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="text-center">Education</h1>
+    
+    <div class="timeline">
+        <div class="arrow"></div>
+
+        <div class="timeline-block" *ngFor="let degree of education">
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-content">
+                <h2>{{ degree.degree }}</h2>
+                <h3>
+                    {{ degree.school }}
+                </h3>
+                <p>
+                    {{ degree.accolades }} <br>
+                    Graduated {{ degree.graduated }} - {{ degree.gpa }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

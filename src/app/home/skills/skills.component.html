@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row justify-content-md-center skills">
+        <div class="col-12">
+            <h1 class="text-center">Skills</h1>
+        </div>
+    
+        <div class="col-md-4 skill-category" *ngFor="let category of skills">
+            <h2 class="text-center">{{ category.category }}</h2>
+    
+            <ul class="list-unstyled">
+                <li *ngFor="let skill of category.skills" [attr.data-tooltip]="skill.skill">
+                    <img src="{{ skill.image }}" alt="{{ skill.skill }}" *ngIf="skill.image != ''">
+                    <span *ngIf="skill.image === null || skill.image === ''">{{ skill.skill }}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>            

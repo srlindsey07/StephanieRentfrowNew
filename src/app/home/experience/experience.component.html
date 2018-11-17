@@ -1,0 +1,20 @@
+<div class="container">
+    <h1 class="text-center">Experience</h1>
+    
+    <div class="timeline">
+        <div class="arrow"></div>
+
+        <div class="timeline-block" *ngFor="let job of experience">
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-content">
+                <h2>{{ job.location }}</h2>
+                <h3>
+                    {{ job.position }} <br>
+                    {{ job.range }}
+                </h3>
+                <p>{{ job.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>

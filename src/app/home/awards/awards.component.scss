@@ -1,0 +1,20 @@
+.awards {
+    text-align: center;
+
+    .award {
+        margin-top: 15px;
+
+        .award-img {
+            height: 83px;
+            margin-bottom: 10px;
+        }
+
+        .projects {
+            li {
+                &:not(:last-child) {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}

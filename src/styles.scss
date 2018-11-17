@@ -1,1 +1,167 @@
 /* You can add global styles to this file, and also import other style files */
+@import './theme';
+@import 'node_modules/bootstrap-css-only/css/bootstrap.min.css';
+@import './variables';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    color: $gray-70;
+}
+
+h1 {
+    font-size: 28px;
+    color: $color-primary;
+}
+
+h2 {
+    font-size: 21px;
+    color: $color-secondary;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* angular material fab button */
+.mat-fab {
+    color: #fff;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+ul {
+    &.list-unstyled {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &.list-horiz {
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+main {
+    > section {
+        padding: 20px 0;
+
+        &:nth-child(even) {
+            background-color: $gray-10;
+        }
+    }
+}
+
+@mixin tooltip-common {
+    position: absolute;
+    left: 50%;
+    z-index: 9;
+    display: none;
+    opacity: 0;
+}
+[data-tooltip] {
+    position: relative;
+
+    &:before {
+        border: solid $color-primary;
+        border-width: 0 10px 10px 0;
+        content: '';
+        bottom: -8px;
+        transform: translate(-50%, 50%) rotate(45deg);
+        @include tooltip-common;
+    }
+
+    &:after {
+        content: attr(data-tooltip);
+        bottom: -40px;
+        padding: 5px 10px 3px 10px;
+        background: $color-primary;
+        color: #fff;
+        white-space: nowrap;
+        transform: translateX(-50%);
+        @include tooltip-common;
+    }
+
+    &:hover {
+        &:before, &:after {
+            display: block;
+            opacity: 1;
+        }
+    }
+}
+
+.timeline {
+    position: relative;
+    margin-top: 20px;
+    padding-top: 10px;
+
+    .arrow {
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid $color-accent;
+        position: absolute;
+        left: calc(50% - 7.55px);
+        top: -6px;
+    }
+
+    .timeline-block {
+        position: relative;
+
+        .timeline-marker {
+            width: 10px;
+            height: 10px;
+            background-color: $color-accent;
+            border-radius: 50%;
+            position: absolute;
+            left: calc(50% - 4.6px);
+            top: 4px;
+        }
+
+        &:nth-child(even) {
+            .timeline-content {
+                margin-right: 52%;
+                text-align: right;
+            }
+        }
+
+        &:nth-child(odd) {
+            .timeline-content {
+                margin-left: 52%;
+                text-align: left;
+            }
+        }
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: calc(50% - 1.5px);
+        height: 100%;
+        width: 3px;
+        background: $color-accent;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

@@ -1,0 +1,26 @@
+[
+   {
+       "location": "LogistiCare Solutions",
+       "position": "Website Specialist",
+       "range": "Oct. 2016 - Present (2+ years)",
+       "description": "TBA"
+    },
+    {
+        "location": "Mindtree Limited",
+        "position": "Senior Software Engineer",
+        "range": "Dec. 2013 - Oct. 2016 (2 years, 10 months)",
+        "description": "Produce high ﬁdelity software prototypes to allow clients to interact with a working product. Also assist with UI/UX designs, mockups and decisions."
+    },
+    {
+        "location": "MediaEDGE Communication",
+        "position": "Graphic Designer",
+        "range": "Dec. 2011 - Dec. 2013 (2 years)",
+        "description": "Designed professional magazine and directory layouts for many associations. Layouts included editorial and advertisement placement as well as advertisement design when needed. Also maintained association websites through a content management system."
+    },
+    {
+        "location": "Publix Supermarkets",
+        "position": "Cashier",
+        "range": "Sep. 2007 - Mar. 2014 (6 years, 6 months)",
+        "description": "Provided excellent customer service and assisted customers with questions or concerns."
+    }
+]

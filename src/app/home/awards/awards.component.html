@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row justify-content-md-center awards">
+        <div class="col-12">
+            <h1 class="text-center">Awards</h1>
+        </div>
+    
+        <div class="col-md-3 award" *ngFor="let award of awards">
+            <div class="award-img" *ngIf="award.projects.length < 2">
+                <img src="{{ award.image }}" alt="{{ award.imageAlt }}">
+            </div>
+
+            <div class="award-img" *ngIf="award.projects.length >= 2 ">
+                <img src="{{ award.image }}" alt="{{ award.imageAlt }}" *ngFor="let project of award.projects">
+            </div>
+
+            <h2>{{ award.title }}</h2>
+            <h3 *ngIf="award.award">{{ award.award }}</h3>
+
+            <ul class="list-unstyled projects" *ngIf="award.projects.length > 0">
+                <li *ngFor="let project of award.projects">{{ project.title }}</li>
+            </ul>
+
+            <p *ngIf="award.description">{{ award.description }}</p>
+        </div>
+    </div>
+</div>

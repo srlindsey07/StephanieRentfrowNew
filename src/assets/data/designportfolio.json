@@ -1,0 +1,83 @@
+[
+    {
+        "Image": "",
+        "Title": "Bella Vite Winery Branding & Corporate Identity",
+        "Description": "Create a logo and branding along with a corporate identity package for Bella Vite Winery.",
+        "Role": "Graphic Designer",
+        "Responsibilities": "Logo Design, Branding, Print Setup",
+        "TechUsed": ["Adobe Illustrator", "Adobe Indesign"],
+        "Accolades": ["2012 Gold District ADDY Award", "2012 Silver Local ADDY Award"]
+    },
+    {
+        "Image": "",
+        "Title": "Gainesville Chiropractic Brochure",
+        "Description": "Design a 12-page informational brochure for Dr. Charles Jones at Gainsville Chirpractic with proper print setup.",
+        "Role": "Graphic Designer",
+        "Responsibilities": "Branding, Layout, Illustration, Print Setup",
+        "TechUsed": ["Adobe Illustrator", "Adobe Indesign"],
+        "Accolades": []
+    },
+    {
+        "Image": "",
+        "Title": "Rocker Girl",
+        "Description": "Design an 8” x 8” photo montage with a Rock & Roll theme.",
+        "Role": "Photographer, Graphic Designer",
+        "Responsibilities": "Photography, Photo Editing",
+        "TechUsed": ["Adobe Photoshop"],
+        "Accolades": []
+    }, 
+    {
+        "Image": "",
+        "Title": "Graveyard Montage",
+        "Description": "Create a photo montage with a spooky theme.",
+        "Role":"Photographer, Graphic Designer",
+        "Responsibilities": "Photography, Photo Editing",
+        "TechUsed": ["Adobe Photoshop"],
+        "Accolades": []
+    },
+    {
+        "Image": "",
+        "Title": "Theorem",
+        "Description": "Create a name, slogan, logo and branding for an agile assessment dashboard that tests many aspects of a company’s agility.",
+        "Role": "Graphic Designer",
+        "Responsibilities": "Logo Design, Branding",
+        "TechUsed": ["Adobe Illustrator"],
+        "Accolades": []
+    },
+    {
+        "Image": "",
+        "Title": "Organic Guide Newsletter",
+        "Description": "Design a 12-page newsletter including nameplate design, photography and illustrations with proper print setup.",
+        "Role":"Graphic Designer",
+        "Responsibilities": "Logo Design, Branding, Layout, Photography, Photo Editing, Illustration, Print Setup",
+        "TechUsed": ["Adobe Illustrator", "Adobe Indesign", "Adobe Photoshop"],
+        "Accolades": []
+    },
+    {
+        "Image": "",
+        "Title": "Saraswati Poster",
+        "Description": "Create a poster representing a God or Goddess to promote Asian Heritage Month.",
+        "Role": "Graphic Designer",
+        "Responsibilities": "Research, Illustration, Layout",
+        "TechUsed": ["Adobe Illustrator"],
+        "Accolades": ["2012 Silver Local ADDY Award"]
+    },
+    {
+        "Image": "",
+        "Title": "Leslie's Floral Boutique Branding & Corporate Identity",
+        "Description": "Design a logo and corporate identity package for Leslie's Floral Boutique.",
+        "Role":"Graphic Designer",
+        "Responsibilities": "Logo Design, Branding, Layout",
+        "TechUsed": ["Adobe Illustrator", "Adobe Indesign"],
+        "Accolades": []
+    },
+    {
+        "Image": "",
+        "Title": "Leslie's Floral Boutique Website",
+        "Description": "Design a website for Leslie's Floral Boutique based on current branding.",
+        "Role": "UI/UX Designer",
+        "Responsibilities": "UX & UI Design",
+        "TechUsed": ["Adobe Illustrator", "Adobe Indesign"],
+        "Accolades": []
+    }
+]

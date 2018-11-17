@@ -1,0 +1,35 @@
+@import '../../../variables.scss';
+
+.skill-category {
+    margin-top: 10px;
+
+    ul {
+        @include display-flex;
+        @include flex-wrap(wrap);
+        justify-content: center;
+
+        li {
+            // @include flex(1, 0, 50px);
+            text-align: center;
+            margin: 10px;
+
+            img {
+                width: 100%;
+                max-width: 70px;
+                max-height: 70px;
+            }
+
+            &[data-tooltip="Angular"],
+            &[data-tooltip="Angular Material"],
+            &[data-tooltip="Bootstrap"] {
+                img {
+                    width: 40px;
+                }
+            }
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}

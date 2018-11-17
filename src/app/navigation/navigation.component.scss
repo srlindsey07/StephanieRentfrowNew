@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.main-nav {
+    @include display-flex;
+    padding: 0 $container-padding;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primary;
+
+    ul {
+        li {
+            a {
+                display: block;
+                color: #fff;
+                font-size: 18px;
+                text-decoration: none;
+                padding: 16.5px 15px;
+
+                &.active {
+                    
+                }
+            }
+        }
+    }
+}

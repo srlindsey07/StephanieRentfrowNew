@@ -1,0 +1,25 @@
+
+<nav class="main-nav">
+    <a routerLink="/">
+        <img src="../../assets/img/logo.png" alt="Stephanie Rentfrow">
+    </a>
+
+    <div class="nav">
+        <mat-button-toggle value="bold">
+            <i class="material-icons">
+                expand_more
+            </i>
+        </mat-button-toggle>
+        <ul class="list-unstyled list-horiz"> 
+            <li>
+                <a routerLink="/" [routerLinkActive]="'active'">Resume</a>
+            </li>
+            <li>
+                <a routerLink="/design-portfolio" [routerLinkActive]="'active'">Designs</a>
+            </li>
+            <li>
+                <a routerLink="/dev-portfolio" [routerLinkActive]="'active'">Development</a>
+            </li>
+        </ul>
+    </div>
+</nav>

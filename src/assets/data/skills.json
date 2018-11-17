@@ -1,0 +1,48 @@
+[
+    {
+        "category": "Software",
+        "skills": [
+            {"skill": "Adobe Illustrator", "image": "../assets/img/icon-illustrator.png"},
+            {"skill": "Adobe InDesign", "image": "../assets/img/icon-indesign.png"},
+            {"skill": "Adobe Photoshop", "image": "../assets/img/icon-photoshop.png"}
+        ]
+    }, 
+    {
+        "category": "Languages",
+        "skills": [
+            {"skill": "HTML5", "image": "../assets/img/icon-html5.png"},
+            {"skill": "CSS3", "image": "../assets/img/icon-css3.png"},
+            {"skill": "Javascript", "image": "../assets/img/icon-javascript.png"},
+            {"skill": "SQL", "image": ""}
+        ]
+    },
+    {
+        "category": "Frameworks & Libraries",
+        "skills": [
+            {"skill": "Angular", "image": "../assets/img/icon-angular.png"},
+            {"skill": "React", "image": "../assets/img/icon-react.png"},
+            {"skill": "Bootstrap", "image": "../assets/img/icon-bootstrap.svg"},
+            {"skill": "jQuery", "image": "../assets/img/icon-jquery.png"}
+        ]
+    },
+    {
+        "category": "Tools",
+        "skills": [
+            {"skill": "Sass", "image": "../assets/img/icon-sass.png"},
+            {"skill": "Less", "image": "../assets/img/icon-less.png"},
+            {"skill": "git", "image": "../assets/img/icon-git.png"},
+            {"skill": "Node", "image": "../assets/img/icon-node.png"},
+            {"skill": "Grunt", "image": "../assets/img/icon-grunt.png"},
+            {"skill": "Gulp", "image": "../assets/img/icon-gulp.png"},
+            {"skill": "Webpack", "image": "../assets/img/icon-webpack.png"},
+            {"skill": "Evoq/DotNetNuke", "image": "../assets/img/icon-dnn.png"},
+            {"skill": "WordPress", "image": "../assets/img/icon-wordpress.png"}
+        ]
+    },
+  {
+    "category": "Other",
+    "skills": [ 
+        {"skill": "Web Accessibility", "image": "" }
+    ]
+  }
+]

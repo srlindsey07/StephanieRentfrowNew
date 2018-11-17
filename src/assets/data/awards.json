@@ -1,0 +1,39 @@
+[
+    {
+        "title": "2012 Student ADDY awards",
+        "award": "2 Silver Local ADDY awards",
+        "description": "",
+        "projects": [
+            {"title": "Bella Vite Winery Branding & Corporate Identity"},
+            {"title": "Saraswati Poster"}
+        ],
+        "image": "../assets/img/addy-silver.png",
+        "imageAlt": "Silver ADDY"
+    },
+    {
+        "title": "2012 Student ADDY awards",
+        "award": "1 Gold District ADDY award",
+        "description": "",
+        "projects": [
+            {"title": "Bella Vite Winery Branding & Corporate Identity"}
+        ],
+        "image": "../assets/img/addy-gold.png",
+        "imageAlt": "Gold ADDY"
+    },
+    {
+        "title": "Francis B. Watson Memorial Scholarship",
+        "award": "",
+        "description": "Full scholarship for an A.A. in Business Administration at Santa Fe College",
+        "projects": [],
+        "image": "../assets/img/santa-fe-logo.png",
+        "imageAlt": "Santa Fe College"
+    },
+    {
+        "title": "Florida Bright Futures",
+        "award": "",
+        "description": "",
+        "projects": [],
+        "image": "../assets/img/bright-futures-logo.png",
+        "imageAlt": "Florida Bright Futures"
+    }
+]

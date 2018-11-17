@@ -1,0 +1,42 @@
+@import "~@angular/material/theming";
+
+$p: mat-palette($mat-cyan, 700, 500, 900);
+$s: mat-palette($mat-pink, 700, 500, 800);
+$a: mat-palette($mat-yellow, 600, 400, 700);
+
+$color-primary: map-get($map: $p, $key: default);
+$color-secondary: map-get($map: $s, $key: default);
+$color-accent: map-get($map: $a, $key: default);
+
+$gray-10: #E5E5E5;
+$gray-20: #CDCDCD;
+$gray-30: #B3B3B3;
+$gray-40: #999999;
+$gray-50: #808080;
+$gray-60: #666666;
+$gray-70: #4D4D4D;
+$gray-80: #333333;
+$gray-90: #1A1A1A;
+
+$container-padding: 15px;
+
+@mixin display-flex {
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
+}
+
+@mixin flex($grow, $shrink, $basis) {
+    -webkit-box-flex: $grow $shrink $basis;   
+    // width: $basis;            
+    -webkit-flex: $grow $shrink $basis;      
+    -ms-flex: $grow $shrink $basis;          
+    flex: $grow $shrink $basis; 
+}
+
+@mixin flex-wrap($option) {
+    -webkit-flex-wrap: $option;
+    flex-wrap: $option;
+}
