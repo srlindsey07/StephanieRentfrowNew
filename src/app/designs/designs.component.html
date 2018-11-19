@@ -1,0 +1,26 @@
+<main>
+  <section *ngFor="let design of designs">
+    <div class="container-fluid">
+      <div class="img-container">
+          <img src="{{ design.image }}" aria-hidden="true">
+      </div>
+
+      <div class="project-details">
+          <h1>{{ design.title }}</h1>
+          <p class="proj-desc">{{ design.description }}</p>
+    
+          <ul class="list-unstyled">
+            <li>Role: {{ design.role }}</li>
+            <li>Responsibilities: {{ design.responsibilities }}</li>
+            <li>Tech Used: <span *ngFor="let tech of design.techUsed">{{ tech }}</span></li>
+          </ul>
+
+          <ul class="list-unstyled list-horiz">
+            <li *ngFor="let award of design.accolades" [attr.data-tooltip]="award.title">
+              <img src="{{ award.img }}" alt="award.title">
+            </li>
+          </ul>
+      </div>
+    </div>
+  </section>
+</main>

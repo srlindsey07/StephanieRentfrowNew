@@ -8,7 +8,6 @@
 
 .hero {
     background-color: $gray-70;
-    height: calc(100vh - 55px);
     padding: 30px 15px;
     position: relative;
 
@@ -31,7 +30,7 @@
 
     .btn-scroll {
         position: absolute;
-        bottom: 30px;
+        bottom: 20px;
         right: calc(50% - 15px);
         background-color: $color-accent;
 

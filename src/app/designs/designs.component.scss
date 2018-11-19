@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+
+section {
+    .container-fluid {
+        @include display-flex();
+
+        .img-container {
+            @include flex(0, 0, 60%);
+            margin-right: 30px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .project-details {
+            @include flex(0, 0, 40%);
+        }
+    }
+
+    &:nth-child(even) {
+        .container-fluid {
+            .img-container {
+                order: 2;
+                margin-right: 0;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+.proj-desc {
+    font-weight: bold;
+    font-size: 18px;
+}

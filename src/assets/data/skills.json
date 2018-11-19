@@ -42,7 +42,8 @@
   {
     "category": "Other",
     "skills": [ 
-        {"skill": "Web Accessibility", "image": "" }
+        {"skill": "Web Accessibility", "image": "" },
+        {"skill": "Responsive Design", "image": ""}
     ]
   }
 ]

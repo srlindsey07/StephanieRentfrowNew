@@ -30,7 +30,6 @@ $container-padding: 15px;
 
 @mixin flex($grow, $shrink, $basis) {
     -webkit-box-flex: $grow $shrink $basis;   
-    // width: $basis;            
     -webkit-flex: $grow $shrink $basis;      
     -ms-flex: $grow $shrink $basis;          
     flex: $grow $shrink $basis; 
