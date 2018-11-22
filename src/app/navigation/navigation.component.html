@@ -11,15 +11,15 @@
             </i>
         </button>
 
-        <ul class="nav-menu list-unstyled list-horiz" [ngClass]="{'open': menuOpen}"> 
+        <ul #menu class="nav-menu list-unstyled list-horiz" [ngClass]="{'open': menuOpen}"> 
             <li>
-                <a routerLink="/" [routerLinkActive]="'active'">Resume</a>
+                <a routerLink="/" [routerLinkActive]="'active'" (click)="closeMenu()">Resume</a>
             </li>
             <li>
-                <a routerLink="/design-portfolio" [routerLinkActive]="'active'">Designs</a>
+                <a routerLink="/design-portfolio" [routerLinkActive]="'active'" (click)="closeMenu()">Designs</a>
             </li>
             <li>
-                <a routerLink="/dev-portfolio" [routerLinkActive]="'active'">Development</a>
+                <a routerLink="/dev-portfolio" [routerLinkActive]="'active'" (click)="closeMenu()">Development</a>
             </li>
         </ul>
     </div>

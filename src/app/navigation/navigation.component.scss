@@ -1,8 +1,13 @@
 @import '../../variables.scss';
 
 @mixin height-transition() {
-    -webkit-transition: max-height 1s;
-            transition: max-height 1s;
+    -webkit-transition: max-height 800ms;
+            transition: max-height 800ms;
+}
+
+@mixin border-transition() {
+    -webkit-transition: border-color 300ms;
+            transition: border-color 300ms;
 }
 
 .main-nav {
@@ -19,14 +24,23 @@
     ul {
         li {
             a {
+                @include border-transition();
                 display: block;
                 color: #fff;
                 font-size: 18px;
                 text-decoration: none;
-                padding: 16.5px 15px;
+                padding: 16.5px 15px 13.5px 15px;
+                border-bottom: 3px solid transparent;
 
                 &.active {
-                    
+                    @include border-transition();
+                    border-bottom-color: $gray-20;
+                }
+
+                &:hover {
+                    @include border-transition();
+                    border-bottom-color: $gray-30;
+                    background-color: darken($color-primary, 2%);
                 }
             }
         }
@@ -34,10 +48,7 @@
 
     .menu-toggle {
         display: none;
-    }
-
-    .nav-menu {
-        
+        color: #fff;
     }
 }
 
@@ -55,7 +66,7 @@
             top: 50px;
             z-index: 9;
             width: 100%;
-            background-color: $gray-10;
+            background-color: $gray-05;
             overflow: hidden;
     
             li {
@@ -64,6 +75,14 @@
                 a {
                     color: $gray-80;
                     text-align: right;
+
+                    &.active {
+                        background-color: $gray-10;
+                    }
+
+                    &:hover {
+                        background-color: $gray-10;
+                    }
                 }
             }
 
