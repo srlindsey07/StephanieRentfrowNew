@@ -1,16 +1,17 @@
 
 <nav class="main-nav">
-    <a routerLink="/">
+    <a routerLink="/" class="logo">
         <img src="../../assets/img/logo.png" alt="Stephanie Rentfrow">
     </a>
 
     <div class="nav">
-        <mat-button-toggle value="bold">
+        <button mat-button (click)="toggleMenu()" class="menu-toggle">
             <i class="material-icons">
                 menu
             </i>
-        </mat-button-toggle>
-        <ul class="list-unstyled list-horiz"> 
+        </button>
+
+        <ul class="nav-menu list-unstyled list-horiz" [ngClass]="{'open': menuOpen}"> 
             <li>
                 <a routerLink="/" [routerLinkActive]="'active'">Resume</a>
             </li>
@@ -23,3 +24,4 @@
         </ul>
     </div>
 </nav>
+

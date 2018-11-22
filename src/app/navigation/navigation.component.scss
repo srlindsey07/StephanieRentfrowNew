@@ -1,11 +1,20 @@
 @import '../../variables.scss';
 
+@mixin height-transition() {
+    -webkit-transition: max-height 1s;
+            transition: max-height 1s;
+}
+
 .main-nav {
     @include display-flex;
     padding: 0 $container-padding;
     justify-content: space-between;
     align-items: center;
     background-color: $color-primary;
+
+    .logo {
+        padding: 3px 0;
+    }
 
     ul {
         li {
@@ -22,4 +31,60 @@
             }
         }
     }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-menu {
+        
+    }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .main-nav {
+        ul {
+            @include height-transition();
+            max-height: 0;
+            position: absolute;
+            left: 0;
+            top: 50px;
+            z-index: 9;
+            width: 100%;
+            background-color: $gray-10;
+            overflow: hidden;
+    
+            li {
+                display: block;
+
+                a {
+                    color: $gray-80;
+                    text-align: right;
+                }
+            }
+
+            &.open {
+                @include height-transition();
+                max-height: 300px;
+
+                li {
+                    display: block;
+                }
+            }
+        }
+
+        .menu-toggle {
+            display: block;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {  }

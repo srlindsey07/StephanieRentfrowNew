@@ -158,9 +158,31 @@ main {
 @media (max-width: 576px) {  }
 
 // Medium devices (tablets, 768px and up)
-@media (max-width: 768px) { 
-    
- }
+@media (max-width: 768px) {
+    .timeline {
+        .arrow {
+            left: -6px;
+        }
+
+        .timeline-block {
+            margin-bottom: 30px;
+
+            .timeline-marker {
+                left: -3px;
+            }
+
+            .timeline-content {
+                margin-left: 30px !important;
+                margin-right: 0 !important;
+                text-align: left !important;
+            }
+        }
+
+        &:before {
+            left: 0;
+        }
+    }
+}
 
 // Large devices (desktops, 992px and up)
 @media (max-width: 992px) {  }
