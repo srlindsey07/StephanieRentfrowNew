@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Personal Website",
+        "gitUrl": "https://github.com/srlindsey07/StephanieRentfrowNew",
+        "liveUrl": "www.stephanierentfrow.com",
+        "tech": ["Angular 6", "Angular Material", "Bootstrap Styles"],
+        "features": ["Responsive", "Accessible"]
+    },
+    {
+        "title": "Leslie's Floral Boutique (Personal Project)",
+        "gitUrl": "",
+        "liveUrl": "",
+        "tech": ["Angular 6", "Angular Material", "Bootstrap Styles"],
+        "features": ["Responsive", "Accessible"],
+        "image": "../assets/img/proj-leslies-web.png"
+    }
+]

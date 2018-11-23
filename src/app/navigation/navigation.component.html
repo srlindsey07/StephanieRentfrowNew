@@ -13,7 +13,7 @@
 
         <ul #menu class="nav-menu list-unstyled list-horiz" [ngClass]="{'open': menuOpen}"> 
             <li>
-                <a routerLink="/" [routerLinkActive]="'active'" (click)="closeMenu()">Resume</a>
+                <a routerLink="/" [routerLinkActive]="'active'" (click)="closeMenu() " [routerLinkActiveOptions]="{exact: true}">Resume</a>
             </li>
             <li>
                 <a routerLink="/design-portfolio" [routerLinkActive]="'active'" (click)="closeMenu()">Designs</a>

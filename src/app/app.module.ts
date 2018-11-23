@@ -15,6 +15,7 @@ import { AwardsComponent } from './home/awards/awards.component';
 import { EducationComponent } from './home/education/education.component';
 import { FooterComponent } from './footer/footer.component';
 import { DesignsComponent } from './designs/designs.component';
+import { DevelopmentComponent } from './development/development.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DesignsComponent } from './designs/designs.component';
     AwardsComponent,
     EducationComponent,
     FooterComponent,
-    DesignsComponent
+    DesignsComponent,
+    DevelopmentComponent
   ],
   imports: [
     BrowserModule,

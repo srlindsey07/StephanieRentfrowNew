@@ -1,15 +1,18 @@
+@import '../../../variables.scss';
+
 .awards {
+    
     text-align: center;
 
     .award {
         margin-top: 15px;
 
         .award-img {
+            @include display-flex();
+            justify-content: center;
+            align-items: center;
             height: 83px;
-            margin-bottom: 10px;
-            display: table-cell;
-            vertical-align: middle;
-            padding-bottom: 10px;
+            margin-bottom: 20px;
 
             img {
                 max-width: 100%;
