@@ -58,6 +58,54 @@ main {
         &:nth-child(even) {
             background-color: $gray-05;
         }
+
+        &.portfolio-project {
+            .container-fluid {
+                @include display-flex();
+        
+                .img-container {
+                    @include flex(0, 0, 60%);
+                    padding-right: 30px;
+        
+                    img {
+                        width: 100%;
+                    }
+                }
+        
+                .project-details {
+                    @include flex(0, 0, 40%);
+
+                    .proj-desc {
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+
+                    ul {
+                        &.details-list {
+                            text-align: left;
+                            
+                            li {
+                                margin-bottom: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        
+            &:nth-child(even) {
+                .container-fluid {
+                    .img-container {
+                        order: 2;
+                        padding-right: 0;
+                        padding-left: 30px;
+                    }
+        
+                    .project-details {
+                        text-align: right;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -102,16 +150,16 @@ main {
 .timeline {
     position: relative;
     margin-top: 20px;
-    padding-top: 10px;
+    padding-top: 15px;
 
     .arrow {
         width: 0;
         height: 0;
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        border-bottom: 8px solid $color-accent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $color-accent;
         position: absolute;
-        left: calc(50% - 7.55px);
+        left: calc(50% - 10px);
         top: -6px;
     }
 
@@ -119,25 +167,25 @@ main {
         position: relative;
 
         .timeline-marker {
-            width: 10px;
-            height: 10px;
+            width: 12px;
+            height: 12px;
             background-color: $color-accent;
             border-radius: 50%;
             position: absolute;
-            left: calc(50% - 4.6px);
+            left: calc(50% - 6px);
             top: 4px;
         }
 
         &:nth-child(even) {
             .timeline-content {
-                margin-right: 52%;
+                margin-right: 53%;
                 text-align: right;
             }
         }
 
         &:nth-child(odd) {
             .timeline-content {
-                margin-left: 52%;
+                margin-left: 53%;
                 text-align: left;
             }
         }
@@ -159,6 +207,33 @@ main {
 
 // Medium devices (tablets, 768px and up)
 @media (max-width: 768px) {
+    main {
+        > section {
+            &.portfolio-project {
+                .container-fluid {
+                    flex-direction: column;
+                    
+                    .img-container {
+                        @include flex(0, 0, 100%);
+                        margin-bottom: 20px;
+                    }
+        
+                    .project-details {
+                        @include flex(0, 0, 100%);
+                        order: 2;
+                    }
+        
+                    &:nth-child(odd) {
+                        .project-details {
+                            text-align: left !important;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .timeline {
         .arrow {
             left: -6px;

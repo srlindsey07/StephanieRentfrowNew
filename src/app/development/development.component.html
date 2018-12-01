@@ -1,5 +1,5 @@
 <main>
-  <section *ngFor="let project of projects">
+  <section class="portfolio-project" *ngFor="let project of projects">
     <div class="container-fluid">
       <div class="img-container">
           <img src="{{ project.image }}" aria-hidden="true">
@@ -10,13 +10,12 @@
     
           <ul class="list-unstyled">
             <li>
-              Technology Used: <span *ngFor="let tech of project.tech; last as isLast">{{ tech }}<span *ngIf="!isLast">, </span></span>
+              <strong>Technology Used: </strong><span *ngFor="let tech of project.tech; last as isLast">{{ tech }}<span *ngIf="!isLast">, </span></span>
             </li>
             <li>
-              Features: <span *ngFor="let feature of project.features; last as isLast">{{ feature }}<span *ngIf="!isLast">, </span></span>
+              <strong>Features: </strong><span *ngFor="let feature of project.features; last as isLast">{{ feature }}<span *ngIf="!isLast">, </span></span>
             </li>
           </ul>
-
       </div>
     </div>
   </section>
